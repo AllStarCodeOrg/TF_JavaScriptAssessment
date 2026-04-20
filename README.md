@@ -1,6 +1,6 @@
-# JavaScript Assessment - Teaching Fellow 
+# JavaScript Assessment - Teaching Fellow
 
-The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to be completed and turned in to lincoln@allstarcode.org as a GitHub gist.
+The All Star Code Teaching Fellow JavaScript Assessment consists of 2 tasks, to be completed and turned in as a GitHub gist via the submission form, any questions or concerns should be directed to hunter@allstarcode.org.
 
 ### **IT IS NOT NECESSARY PASS ALL TEST SPECS TO GET HIRED. JUST DO YOUR BEST! :smile:**
 
@@ -9,7 +9,7 @@ The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to 
 
 2. Navigate into the repo from command line and before doing anything else, run the command `npm install`.
     - If any error occurs, run `npm init`. Hit enter for all the questions and enter `npm install` again.
-    - If command is not found for `npm install` or `npm init`, install node.js here: [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and repeat step #2. 
+    - If command is not found for `npm install` or `npm init`, install node.js here: [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and repeat step #2.
 
 3. Follow the prompts for each task and do your best!
 <br>
@@ -17,7 +17,7 @@ The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to 
 ### Notes
 - The tasks are designed to get progressively harder and you are advised to attempt the tasks in the given order.
 - The tests folder contains test files in which your functions will be tested with. Feel free to look at the tests, but **DO NOT** edit them. These exact tests will be used to test your answers when you submit your work.
-- **Info on testing your work with the provided test specs is included at the <a href="#tests">end of the document</a>**.  
+- **Info on testing your work with the provided test specs is included at the <a href="#tests">end of the document</a>**.
 <br>
 
 ---
@@ -28,18 +28,18 @@ The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to 
     <br><br>
     - **EXPECTED OUTPUT:**
         - `oddOneOut([1, 2, 3]) → 1`
-            - First odd number: `1` 
+            - First odd number: `1`
             <br>
         - `oddOneOut([10, 12, 13, 14, 16, 18]) → 13`
-            - First odd number: `13` 
+            - First odd number: `13`
             <br>
         - `oddOneOut([2, 4, 6]) → -1`
-            - No odd numbers - function returns `-1` 
+            - No odd numbers - function returns `-1`
 
 <br>
 
 ## Task #2 - Fizzbuzz
-- Write your code in fizzbuzz.js in the cloned or downloaded folder. 
+- Write your code in fizzbuzz.js in the cloned or downloaded folder.
 - The function fizzBuzz takes an integer *start*, an integer *end*, an integer *skip*, and **returns an array** that has all integers from *start* to *end*, excluding integers with the digit *skip* in it.
     <br><br>
     - **EXPECTED OUTPUT:**
@@ -58,27 +58,6 @@ The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to 
 
 <br>
 
-## Task #3 - String Cleaning
-- Write your code in **stringcleaning.js** in the cloned or downloaded folder.
-- The function strClean takes an array of strings and **returns an array** of cleaned strings, cleaned meaning:
-    - Any leading or trailing whitespaces gets removed.
-        - E.g. `'  Blah!  ' → 'Blah!'`
-        <br>
-    - Any digit that isn't 0 or 1 gets removed.
-        - E.g. `'10023' → 'onezerozero'`
-        <br>
-    - Any digit that is 0 or 1 gets replaced with the word for that digit.
-        - E.g. `'100' → 'onezerozero'`
-        <br>
-    - Each space in the string gets replaced with an underscore. 
-        - E.g. `'I am   spaced'  → 'I_am___spaced'`
-    <br><br>
-    - **EXPECTED OUTPUT:**
-        - `strClean(['  Blah!  ','10023','100']) → ['Blah!', 'onezerozero', 'onezerozero']`
-        - `strClean(['I am   spaced']) → ['I_am___spaced']`
-
-<br>
-
 ---
 
 <h2 id="tests"> TESTING YOUR FUNCTIONS</h2>
@@ -88,7 +67,7 @@ The All Star Code Teaching Fellow JavaScript Assessment consists of 3 tasks, to 
     - No modifications to any scripts commands in the `package.json` file
     - No modifications to `module.exports` at the end of `pokemon.js`
 
-- Use the following command to test your work in the cloned or downloaded folder: 
+- Use the following command to test your work in the cloned or downloaded folder:
     - `npm run test` to test your Pokemon class and methods.
 <br>
 
@@ -105,9 +84,9 @@ npm ERR! errno 1
 npm ERR! teachingFellows@1.0.0 test_string: `jest tests/pokemon.test.js`
 npm ERR! Exit status 1
 ```
-Your output may look different based on the specific task and the number of tests passed/failed. 
+Your output may look different based on the specific task and the number of tests passed/failed.
 <br><br>
-Take note of these 2 lines: 
+Take note of these 2 lines:
 
 ```shell
 Test Suites: 1 failed, 1 total
@@ -116,7 +95,7 @@ Tests:       7 failed, 1 passed, 8 total
 
 The output above indicates that the function only passed 1 out 8 tests :cry:
 <br>
-You can scroll up the console to diagnose the errors by comparing the expected outputs and what your function returned. 
+You can scroll up the console to diagnose the errors by comparing the expected outputs and what your function returned.
 
 For example:
 ```shell
@@ -129,8 +108,8 @@ For example:
          |                                        ^
 ```
 
-The test failed because the program expected the output of `typeof charmander.name` to be `'string'`, but received the output `undefined` instead. 
+The test failed because the program expected the output of `typeof charmander.name` to be `'string'`, but received the output `undefined` instead.
 
 Your solutions will be tested with these exact test files. Your goal is to have your functions pass as many tests as possible.
-<br> 
+<br>
 **REMEMBER: IT IS NOT NECESSARY TO PASS ALL TESTS TO BE HIRED. PLEASE SUBMIT WHATEVER YOU MANAGE TO COMPLETE!**
